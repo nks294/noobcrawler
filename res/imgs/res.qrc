@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="images">
+    <file>down_arrow.png</file>
+    <file>chat.png</file>
+    <file>console.png</file>
+    <file>disk.png</file>
+    <file>doc.png</file>
+    <file>download.png</file>
+    <file>exit.png</file>
+    <file>flower.png</file>
+    <file>folder.png</file>
+    <file>info.png</file>
+    <file>mail.png</file>
+    <file>picture.png</file>
+    <file>return.png</file>
+    <file>rssorwifi.png</file>
+    <file>setting.png</file>
+  </qresource>
+</RCC>
