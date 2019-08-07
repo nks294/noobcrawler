@@ -32,3 +32,9 @@ https://tis.294.moe/56
 위 블로그 링크에서 다운로드 가능합니다.
 
 상업적 사용도 가능한 프리 아이콘입니다.
+
+프로그램 작동 영상은 유투브 링크
+
+https://www.youtube.com/watch?v=qV-tWIypHnE
+
+에서 확인하실 수 있습니다.
