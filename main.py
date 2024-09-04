@@ -23,30 +23,30 @@ from res.cafe import mssd as m
 
 # TEST MODE TRIGGER [ 0 : NONE, 1 : ACTIVE, 2 : WEB CAM MODE ]
 # LOAD IMAGES DIRECTLY IN DEBUG FOLDER
-test_mode = 0
+test_mode = 1
 
 
 # -------------------------------------------- #
 #             DOWNLOAD IMAGE(FUNC)             #
 # -------------------------------------------- #
 def download_image(var, path):
-    a = var.split("/")
-    filename = a[-1]
-    download_path = path + filename
-    urllib.request.urlretrieve(var, download_path)
+  a = var.split("/")
+  filename = a[-1]
+  download_path = path + filename
+  urllib.request.urlretrieve(var, download_path)
 
 
 def download_image2(request_url_addr):
-    html_page = urllib.request.urlopen(request_url_addr)
-    soup = BeautifulSoup(html_page, 'html.parser')
-    download_url = list(soup.findAll("a", {'class': 'preview'}))
-    for value in download_url:
-        url = value["href"]
-        a = url.split('/')
-        print("작업중...." + url)
-        mypath = 'test'
-        download_path = os.path.join(mypath, a[-1])
-        urllib.request.urlretrieve(url, download_path)
+  html_page = urllib.request.urlopen(request_url_addr)
+  soup = BeautifulSoup(html_page, 'html.parser')
+  download_url = list(soup.findAll("a", {'class': 'preview'}))
+  for value in download_url:
+    url = value["href"]
+    a = url.split('/')
+    print("작업중...." + url)
+    mypath = 'test'
+    download_path = os.path.join(mypath, a[-1])
+    urllib.request.urlretrieve(url, download_path)
 
 
 # -------------------------------------------- #
